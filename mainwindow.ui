@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>410</width>
+    <height>126</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>410</width>
+    <height>126</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ForbiddenCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Hamsolar 1.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>hsolar.ico</normaloff>hsolar.ico</iconset>
+  </property>
+  <property name="toolTip">
+   <string>Data taken from this web site:
+http://www.hamqsl.com/solar.html
+
+      Hamsolar written by
+     Mike Studer, K6EEP
+   Updates every 6 hours</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWebView" name="solar_WV">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>411</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="url">
+     <url>
+      <string>http://www.hamqsl.com/solar101pic.php</string>
+     </url>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

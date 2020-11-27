@@ -1,0 +1,26 @@
+To build and install Hamsolar.
+You need Qt 4.2 or newer.
+
+In the hamsolar directory...
+$ qmake
+$ make
+
+That should give you an executable called hamsolar.
+As root, copy hamsolar to /usr/bin.
+Or on Ubuntu:
+sudo cp ./hamsolar /usr/bin
+
+Or if you see this message on Ubuntu:
+$./hamsolar
+Bus::open: Can not get ibus-daemon's address.
+IBusInputContext::createInputContext: no connection to ibus-daemon
+$
+
+You could ignore it but I hate warning message spam. You can start iBus via:
+System => Preferences => iBus Preferences
+When you open it if it is not running it asks if you want to run it.  Say yes.
+(I am running Gnome)
+IBus is an intelligent input bus for Linux/Unix.
+
+Problems?  Email me.
+k6eep@hamsoftware.org
